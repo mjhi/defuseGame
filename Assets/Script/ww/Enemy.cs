@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
         while(true)
         {
             //
-            transform.Rotate(Vector3.forward*10);
+            // transform.Rotate(Vector3.forward*10);
 
             //적의 현재위치와 목표위치의 거리가 0.02*movement2D.moveSpeed보다 작을때 if 조건문이 실행된다.
             //Tip. movement2D.moveSpeed 를 곱해주는 이유는 속도가 빠르면 한프레임에 0.02보다 크게 움직이기때문에 탈주하는 현상 방지~!

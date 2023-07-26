@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BtnManager : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +19,9 @@ public class BtnManager : MonoBehaviour
 
     void RefreshUnit(){
 
+    }
+    public void Choice1Btn()
+    {
+        InGameManager.instance.Choice = 0;
     }
 }

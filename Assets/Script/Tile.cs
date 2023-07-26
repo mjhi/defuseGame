@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Tile : MonoBehaviour
 {
     [SerializeField] private Color baseColor, offsetColor;
@@ -18,5 +19,11 @@ public class Tile : MonoBehaviour
     }
     void OnMouseExit(){
         highight.SetActive(false);
+    }
+    void OnMouseDown(){
+        Debug.Log("클릭");
+        GameObject T = InGameManager.instance.Unit[InGameManager.instance.Choice];
+        Instantiate(T,transform.position,Quaternion.identity);
+        
     }
 }

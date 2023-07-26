@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Awake()
     {
-        StartCoroutine("SpawnEnemy");
+        
     }
 
     private IEnumerator SpawnEnemy()
@@ -42,5 +42,9 @@ public class EnemySpawner : MonoBehaviour
     void Update()
     {
         
+    }
+    public void RoundStart()
+    {
+         StartCoroutine("SpawnEnemy");
     }
 }
